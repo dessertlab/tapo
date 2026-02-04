@@ -8,7 +8,8 @@ from tapo import ApiClient
 ###############################################################################
 # Configuration
 ###############################################################################
-BASHRC_PATHS = ["/home/test/.bashrc", "/root/.bashrc"]
+#BASHRC_PATHS = ["/home/test/.bashrc", "/root/.bashrc"]
+BASHRC_PATHS = ["~/.bashrc", "/root/.bashrc"]
 
 
 ###############################################################################
@@ -268,13 +269,13 @@ async def main():
         "-a",
         "--add",
         metavar="NEW_IP",
-        help="Add a new IP to the TAPO_P300_IPS in /home/test/.bashrc and /root/.bashrc, then exit."
+        help="Add a new IP to the TAPO_P300_IPS in ~/.bashrc and /root/.bashrc, then exit."
     )
     parser.add_argument(
         "-r",
         "--remove",
         metavar="OLD_IP",
-        help="Remove an IP from TAPO_P300_IPS in /home/test/.bashrc and /root/.bashrc, then exit."
+        help="Remove an IP from TAPO_P300_IPS in ~/.bashrc and /root/.bashrc, then exit."
     )
     parser.add_argument(
         "child_nickname", 
