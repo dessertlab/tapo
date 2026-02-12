@@ -54,11 +54,11 @@ tapo -l
 *Output example:*
 ```text
 === P300 at 192.168.100.120 ===
-  - Nickname: desk_lamp
+  - Nickname: zcu104
     Device ID: 8012...
     State: ON
 
-  - Nickname: monitor
+  - Nickname: kv260
     Device ID: 8013...
     State: OFF
 ```
@@ -75,18 +75,18 @@ tapo <nickname> <action>
 
 * **Turn ON a device:**
     ```bash
-    tapo desk_lamp on
+    tapo kv260 on
     ```
 
 * **Turn OFF a device:**
     ```bash
-    tapo monitor off
+    tapo zcu104 off
     ```
 
 * **Reset (Power Cycle) a device:**
     *Useful for rebooting stuck hardware. This turns the device OFF, waits 2 seconds, and turns it back ON.*
     ```bash
-    tapo router reset
+    tapo zcu102 reset
     ```
 
 ### 3. Managing Device IPs
